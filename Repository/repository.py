@@ -1,5 +1,4 @@
 from typing import Protocol
-
 from Domain.entitate import Entitate
 
 

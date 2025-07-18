@@ -59,6 +59,5 @@ class MedicamentService:
         """
         medicament_vechi = self.__medicamentRepository.read(id_medicament)
         medicament = Medicament(id_medicament, nume, producator, pret, reteta)
-        self.__medicamentValidator.validate_medicament(medicament)
         self.__medicamentRepository.modifica(medicament)
 
