@@ -1,33 +1,37 @@
 {
-    "m1": {
-        "py/object": "Domain.medicament.Medicament",
-        "id_entitate": "m3",
-        "nume": "Aclexa",
-        "producator": "Sandoz",
-        "pret": 300.0,
-        "reteta": "da"
-    },
-    "m2": {
-        "py/object": "Domain.medicament.Medicament",
-        "id_entitate": "m1",
-        "nume": "Nurofen",
-        "producator": "Catena",
-        "pret": 210.0,
-        "reteta": "da"
-    },
-    "m3": {
-        "py/object": "Domain.medicament.Medicament",
-        "id_entitate": "m2",
-        "nume": "Aciclovir",
-        "producator": "Catena",
-        "pret": 110.0,
-        "reteta": "nu"
-    },
-    "m4": {
-        "id_entitate": "m4",
-        "nume": "sirop",
-        "producator": "helpnet",
-        "pret": 56.0,
-        "reteta": "nu"
-    }
+  "m1": {
+    "id_entitate": "m3",
+    "nume": "Aclexa",
+    "producator": "Sandoz",
+    "pret": 300.0,
+    "reteta": "da"
+  },
+  "m2": {
+    "id_entitate": "m1",
+    "nume": "Nurofen",
+    "producator": "Catena",
+    "pret": 210.0,
+    "reteta": "da"
+  },
+  "m3": {
+    "id_entitate": "m2",
+    "nume": "Aciclovir",
+    "producator": "Catena",
+    "pret": 110.0,
+    "reteta": "nu"
+  },
+  "m4": {
+    "id_entitate": "m4",
+    "nume": "sirop",
+    "producator": "helpnet",
+    "pret": 56.0,
+    "reteta": "nu"
+  },
+  "m6": {
+    "id_entitate": "m6",
+    "nume": "nuem",
+    "producator": "proba",
+    "pret": 100.0,
+    "reteta": "nu"
+  }
 }

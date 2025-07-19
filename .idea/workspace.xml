@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aeeeadc-29cf-450d-a136-aca5898a64e3" name="Changes" comment="cli">
-      <change afterPath="$PROJECT_DIR$/cli_farm/crud_medicament.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli_farm/setup.py" afterDir="false" />
+    <list default="true" id="6aeeeadc-29cf-450d-a136-aca5898a64e3" name="Changes" comment="cli1">
+      <change afterPath="$PROJECT_DIR$/cli_farm/build/lib/crud_medicament.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/entitate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/entitate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/medicament.py" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/medicament.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Repository/repository_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/repository_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli_tools/greeter.py" beforeDir="false" afterPath="$PROJECT_DIR$/cli_tools/greeter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/medicament_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/Service/medicament_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli_farm/crud_medicament.py" beforeDir="false" afterPath="$PROJECT_DIR$/cli_farm/crud_medicament.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli_farm/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/cli_farm/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medicament.json" beforeDir="false" afterPath="$PROJECT_DIR$/medicament.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +72,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "settings.editor.selected.configurable": "preferences.externalTools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -121,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752828395098</updated>
       <workItem from="1752828396145" duration="20144000" />
-      <workItem from="1752917785040" duration="12005000" />
+      <workItem from="1752917785040" duration="14543000" />
     </task>
     <task id="LOCAL-00001" summary="c1">
       <option name="closed" value="true" />
@@ -139,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752861084586</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cli1">
+      <option name="closed" value="true" />
+      <created>1752941232897</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752941232898</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,12 +162,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="c1" />
     <MESSAGE value="cli" />
-    <option name="LAST_COMMIT_MESSAGE" value="cli" />
+    <MESSAGE value="cli1" />
+    <option name="LAST_COMMIT_MESSAGE" value="cli1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Farmacie$cli.coverage" NAME="cli Coverage Results" MODIFIED="1752835375959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Farmacie$main.coverage" NAME="main Coverage Results" MODIFIED="1752831856670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Farmacie$crud_medicament.coverage" NAME="crud_medicament Coverage Results" MODIFIED="1752926226351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cli_farm" />
+    <SUITE FILE_PATH="coverage/Farmacie$main.coverage" NAME="main Coverage Results" MODIFIED="1752941545220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Farmacie$medicament_service.coverage" NAME="medicament_service Coverage Results" MODIFIED="1752831162773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Service" />
   </component>
 </project>

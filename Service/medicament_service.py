@@ -1,8 +1,4 @@
-import string
 from typing import List
-from uuid import uuid4
-
-from faker.generator import random
 
 from Domain.medicament import Medicament
 from Repository.repository import Repository
@@ -10,16 +6,16 @@ from Repository.repository import Repository
 
 class MedicamentService:
     def __init__(self,
-                 medicamentRepository: Repository):
-        self.__medicamentRepository = medicamentRepository
+                 medicament_repository: Repository):
+        self.__medicamentRepository = medicament_repository
 
-    def getAll(self) -> List[Medicament]:
+    def getAll(self) -> List[ Medicament ]:
         """
         :return: toate medicamentele care sunt salvate in repository
         """
         return self.__medicamentRepository.read()
 
-    def adauga(self, id_entitate, nume, producator, pret, reteta):
+    def adauga(self, id_medicament, nume, producator, pret, reteta):
         """
         Adauga un medicament in repository
         :param id_medicament: id-ul medicamentului
@@ -30,7 +26,7 @@ class MedicamentService:
         :return: Un nou medicament care va fi adaugat in repository
         """
 
-        medicament = Medicament(id_entitate = id_entitate,
+        medicament = Medicament(id_entitate=id_medicament,
                                 nume=nume,
                                 producator=producator,
                                 pret=pret,
@@ -43,9 +39,7 @@ class MedicamentService:
         :param id_medicament: id-ul dupa care se va face stergerea
         :return: nu returneaza nimic
         """
-        medicament = self.__medicamentRepository.read(id_medicament)
         self.__medicamentRepository.sterge(id_medicament)
-
 
     def modifica(self, id_medicament, nume, producator, pret, reteta):
         """
@@ -57,7 +51,9 @@ class MedicamentService:
         :param reteta: str
         :return: Medicamentul modificat care il va adauga in repository
         """
-        medicament_vechi = self.__medicamentRepository.read(id_medicament)
-        medicament = Medicament(id_medicament, nume, producator, pret, reteta)
+        medicament = Medicament(id_entitate=id_medicament,
+                                nume=nume,
+                                producator=producator,
+                                pret=pret,
+                                reteta=reteta)
         self.__medicamentRepository.modifica(medicament)
-

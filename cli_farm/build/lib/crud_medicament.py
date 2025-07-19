@@ -5,10 +5,8 @@ from pathlib import Path
 from tabulate import tabulate
 from pydantic import BaseModel
 
-
 class Entitate(BaseModel):
     id_entitate: str
-
 
 class Medicament(Entitate):
     nume: str
@@ -24,7 +22,6 @@ class Medicament(Entitate):
             "pret": self.pret,
             "reteta": self.reteta
         }
-
 
 # ========= File Path ==========
 MEDICAMENT_FILE = Path.home() / "PycharmProjects/Farmacie/medicament.json"
@@ -83,7 +80,7 @@ def show(ctx):
 @click.option('--pret', prompt="Preț", type=float, help="Prețul medicamentului")
 @click.option('--reteta', prompt="Necesită rețetă", type=click.Choice([ 'da', 'nu' ]), help="Necesită rețetă")
 @click.pass_context
-def add(ctx, id_entitate, nume, producator, pret, reteta):
+def add(ctx, id, nume, producator, pret, reteta):
     """Adaugă un nou medicament în repository"""
     data = ctx.obj[ 'data' ]
 
@@ -93,7 +90,7 @@ def add(ctx, id_entitate, nume, producator, pret, reteta):
         raise click.BadParameter("Prețul nu poate fi negativ.")
 
     med = Medicament(
-        id_entitate=id_entitate,
+        id_entitate=id,
         nume=nume,
         producator=producator,
         pret=pret,

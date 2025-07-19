@@ -1,4 +1,4 @@
-from pydantic import BaseModel, field_validator
+from pydantic import field_validator
 
 from Domain.entitate import Entitate
 
