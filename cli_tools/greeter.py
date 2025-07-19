@@ -31,4 +31,4 @@ def greet1(nume, lang, say_it):
     """display greeting to user"""
     greetings = 'Hello ' if lang == 'en' else 'Holla ' if lang == 'es' else 'Bonjour'
     for i in range(say_it):
-        click.echo(f"{greetings}{nume}")
+        click.echo(click.style(f"{greetings}{nume}", fg='blue', bg='red'))

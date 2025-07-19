@@ -15,3 +15,12 @@ class Medicament(Entitate):
         if pret < 0:
             raise ValueError("pret must be greater than or equal to 0")
         return pret
+
+    def to_dict(self):
+        return {
+            "id_entitate": self.id_entitate,
+            "nume": self.nume,
+            "producator": self.producator,
+            "pret": self.pret,
+            "reteta": self.reteta
+        }

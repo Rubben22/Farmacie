@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aeeeadc-29cf-450d-a136-aca5898a64e3" name="Changes" comment="c1">
-      <change afterPath="$PROJECT_DIR$/cli_tools/authenticate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli_tools/calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli_tools/fileutils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli_tools/greeter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli_tools/notes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli_tools/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Farmacie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Farmacie.iml" afterDir="false" />
+    <list default="true" id="6aeeeadc-29cf-450d-a136-aca5898a64e3" name="Changes" comment="cli">
+      <change afterPath="$PROJECT_DIR$/cli_farm/crud_medicament.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli_farm/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repository/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service/medicament_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/Service/medicament_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/medicament.py" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/medicament.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repository/repository_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repository/repository_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli_tools/greeter.py" beforeDir="false" afterPath="$PROJECT_DIR$/cli_tools/greeter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medicament.json" beforeDir="false" afterPath="$PROJECT_DIR$/medicament.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +28,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Rubben22"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rubben22&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Rubben22/Farmacie.git",
-    "accountId": "a9582ea8-77c0-4ba3-a4a5-0ec901a6ad2d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rubben22/Farmacie.git&quot;,
+    &quot;accountId&quot;: &quot;a9582ea8-77c0-4ba3-a4a5-0ec901a6ad2d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="302b0s0k4lmV59Mnq2yR2ucv2Hb" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,6 +55,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.cli.executor": "Run",
+    "Python.crud_medicament.executor": "Run",
     "Python.main.executor": "Run",
     "Python.medicament_service.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -68,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Python",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -122,7 +120,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752828395098</updated>
-      <workItem from="1752828396145" duration="20076000" />
+      <workItem from="1752828396145" duration="20144000" />
+      <workItem from="1752917785040" duration="12005000" />
     </task>
     <task id="LOCAL-00001" summary="c1">
       <option name="closed" value="true" />
@@ -132,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752832219476</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cli">
+      <option name="closed" value="true" />
+      <created>1752861084586</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752861084586</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,11 +147,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="c1" />
-    <option name="LAST_COMMIT_MESSAGE" value="c1" />
+    <MESSAGE value="cli" />
+    <option name="LAST_COMMIT_MESSAGE" value="cli" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Farmacie$cli.coverage" NAME="cli Coverage Results" MODIFIED="1752835375959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Farmacie$main.coverage" NAME="main Coverage Results" MODIFIED="1752831856670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Farmacie$crud_medicament.coverage" NAME="crud_medicament Coverage Results" MODIFIED="1752926226351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cli_farm" />
     <SUITE FILE_PATH="coverage/Farmacie$medicament_service.coverage" NAME="medicament_service Coverage Results" MODIFIED="1752831162773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Service" />
   </component>
 </project>
