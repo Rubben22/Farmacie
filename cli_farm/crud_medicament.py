@@ -3,7 +3,7 @@ import click
 from pathlib import Path
 
 from tabulate import tabulate
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 
 
 class Entitate(BaseModel):
@@ -15,6 +15,13 @@ class Medicament(Entitate):
     producator: str
     pret: float
     reteta: str
+
+    @field_validator('pret')
+    @classmethod
+    def validate_pret(cls, pret):
+        if pret < 0:
+            raise ValueError("pret must be greater than or equal to 0")
+        return pret
 
     def to_dict(self):
         return {

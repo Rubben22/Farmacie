@@ -1,107 +1,107 @@
 {
-  "m1": {
-    "id_entitate": "m3",
-    "nume": "Aclexa",
-    "producator": "Sandoz",
-    "pret": 300.0,
-    "reteta": "da"
-  },
-  "m2": {
-    "id_entitate": "m1",
-    "nume": "Nurofen",
-    "producator": "Catena",
-    "pret": 210.0,
-    "reteta": "da"
-  },
-  "m4": {
-    "id_entitate": "m4",
-    "nume": "sirop",
-    "producator": "helpnet",
-    "pret": 56.0,
-    "reteta": "nu"
-  },
-  "m6": {
-    "id_entitate": "m6",
-    "nume": "nuem",
-    "producator": "proba",
-    "pret": 100.0,
-    "reteta": "nu"
-  },
-  "m3": {
-    "id_entitate": "m3",
-    "nume": "planta",
-    "producator": "helpnet",
-    "pret": 56.0,
-    "reteta": "nu"
-  },
-  "m11": {
-    "id_entitate": "m1",
-    "nume": "Nurofen",
-    "producator": "Reckitt",
-    "pret": 22.5,
-    "reteta": "nu"
-  },
-  "m12": {
-    "id_entitate": "m2",
-    "nume": "Aclexa",
-    "producator": "Sandoz",
-    "pret": 45.0,
-    "reteta": "da"
-  },
-  "m13": {
-    "id_entitate": "m3",
-    "nume": "Paracetamol",
-    "producator": "Antibiotice",
-    "pret": 12.0,
-    "reteta": "nu"
-  },
-  "m14": {
-    "id_entitate": "m4",
-    "nume": "Ibuprofen",
-    "producator": "Biofarm",
-    "pret": 19.0,
-    "reteta": "nu"
-  },
-  "m15": {
-    "id_entitate": "m5",
-    "nume": "Ospen",
-    "producator": "Sandoz",
-    "pret": 33.0,
-    "reteta": "da"
-  },
-  "m16": {
-    "id_entitate": "m6",
-    "nume": "Faringosept",
-    "producator": "Terapia",
-    "pret": 18.5,
-    "reteta": "nu"
-  },
-  "m7": {
-    "id_entitate": "m7",
-    "nume": "Zinnat",
-    "producator": "GlaxoSmithKline",
-    "pret": 57.0,
-    "reteta": "da"
-  },
-  "m8": {
-    "id_entitate": "m8",
-    "nume": "Strepsils",
-    "producator": "Reckitt",
-    "pret": 25.0,
-    "reteta": "nu"
-  },
-  "m9": {
-    "id_entitate": "m9",
-    "nume": "Algocalmin",
-    "producator": "Terapia",
-    "pret": 30.0,
-    "reteta": "nu"
-  },
-  "m10": {
-    "id_entitate": "m10",
-    "nume": "ACC",
-    "producator": "Hexal",
-    "pret": 40.0,
-    "reteta": "nu"
-  }
+    "m1": {
+        "id_entitate": "m3",
+        "nume": "Aclexa",
+        "producator": "Sandoz",
+        "pret": 300.0,
+        "reteta": "da"
+    },
+    "m2": {
+        "id_entitate": "m1",
+        "nume": "Nurofen",
+        "producator": "Catena",
+        "pret": 210.0,
+        "reteta": "da"
+    },
+    "m4": {
+        "id_entitate": "m4",
+        "nume": "sirop",
+        "producator": "helpnet",
+        "pret": 56.0,
+        "reteta": "nu"
+    },
+    "m6": {
+        "id_entitate": "m6",
+        "nume": "nuem",
+        "producator": "proba",
+        "pret": 100.0,
+        "reteta": "nu"
+    },
+    "m3": {
+        "id_entitate": "m3",
+        "nume": "planta",
+        "producator": "helpnet",
+        "pret": 56.0,
+        "reteta": "nu"
+    },
+    "m11": {
+        "id_entitate": "m1",
+        "nume": "Nurofen",
+        "producator": "Reckitt",
+        "pret": 22.5,
+        "reteta": "nu"
+    },
+    "m12": {
+        "id_entitate": "m2",
+        "nume": "Aclexa",
+        "producator": "Sandoz",
+        "pret": 45.0,
+        "reteta": "da"
+    },
+    "m13": {
+        "id_entitate": "m3",
+        "nume": "Paracetamol",
+        "producator": "Antibiotice",
+        "pret": 12.0,
+        "reteta": "nu"
+    },
+    "m14": {
+        "id_entitate": "m4",
+        "nume": "Ibuprofen",
+        "producator": "Biofarm",
+        "pret": 19.0,
+        "reteta": "nu"
+    },
+    "m15": {
+        "id_entitate": "m5",
+        "nume": "Ospen",
+        "producator": "Sandoz",
+        "pret": 33.0,
+        "reteta": "da"
+    },
+    "m16": {
+        "id_entitate": "m6",
+        "nume": "Faringosept",
+        "producator": "Terapia",
+        "pret": 18.5,
+        "reteta": "nu"
+    },
+    "m7": {
+        "id_entitate": "m7",
+        "nume": "Zinnat",
+        "producator": "GlaxoSmithKline",
+        "pret": 57.0,
+        "reteta": "da"
+    },
+    "m8": {
+        "id_entitate": "m8",
+        "nume": "Strepsils",
+        "producator": "Reckitt",
+        "pret": 25.0,
+        "reteta": "nu"
+    },
+    "m9": {
+        "id_entitate": "m9",
+        "nume": "Algocalmin",
+        "producator": "Terapia",
+        "pret": 30.0,
+        "reteta": "nu"
+    },
+    "m10": {
+        "id_entitate": "m10",
+        "nume": "ACC",
+        "producator": "Hexal",
+        "pret": 40.0,
+        "reteta": "nu"
+    }
 }
