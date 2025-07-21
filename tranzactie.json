@@ -1,0 +1,100 @@
+{
+    "t1": {
+        "id_entitate": "t1",
+        "id_medicament": "m1",
+        "id_card_client": "2",
+        "nr_bucati": 2,
+        "data_ora": "04.12.2021 10:45"
+    },
+    "t2": {
+        "id_entitate": "t2",
+        "id_medicament": "m3",
+        "id_card_client": "1",
+        "nr_bucati": 5,
+        "data_ora": "15.11.2021 12:00"
+    },
+    "t3": {
+        "id_entitate": "t3",
+        "id_medicament": "m2",
+        "id_card_client": "",
+        "nr_bucati": 1,
+        "data_ora": "21.07.2024 08:24"
+    },
+    "t4": {
+        "id_entitate": "t4",
+        "id_medicament": "m4",
+        "id_card_client": "4",
+        "nr_bucati": 3,
+        "data_ora": "02.01.2022 09:00"
+    },
+    "t5": {
+        "id_entitate": "t5",
+        "id_medicament": "m11",
+        "id_card_client": "5",
+        "nr_bucati": 2,
+        "data_ora": "18.02.2022 13:00"
+    },
+    "t6": {
+        "id_entitate": "t6",
+        "id_medicament": "m6",
+        "id_card_client": "",
+        "nr_bucati": 4,
+        "data_ora": "25.06.2023 16:30"
+    },
+    "t7": {
+        "id_entitate": "t7",
+        "id_medicament": "m7",
+        "id_card_client": "6",
+        "nr_bucati": 1,
+        "data_ora": "04.07.2023 10:10"
+    },
+    "t8": {
+        "id_entitate": "t8",
+        "id_medicament": "m8",
+        "id_card_client": "",
+        "nr_bucati": 6,
+        "data_ora": "10.08.2023 11:00"
+    },
+    "t9": {
+        "id_entitate": "t9",
+        "id_medicament": "m9",
+        "id_card_client": "3",
+        "nr_bucati": 2,
+        "data_ora": "19.09.2023 15:30"
+    },
+    "t10": {
+        "id_entitate": "t10",
+        "id_medicament": "m10",
+        "id_card_client": "7",
+        "nr_bucati": 3,
+        "data_ora": "05.10.2023 17:40"
+    },
+    "t11": {
+        "id_entitate": "t11",
+        "id_medicament": "m1",
+        "id_card_client": "8",
+        "nr_bucati": 2,
+        "data_ora": "01.12.2023 09:30"
+    },
+    "t12": {
+        "id_entitate": "t12",
+        "id_medicament": "m3",
+        "id_card_client": "",
+        "nr_bucati": 4,
+        "data_ora": "14.01.2024 08:50"
+    },
+    "t13": {
+        "id_entitate": "t13",
+        "id_medicament": "m7",
+        "id_card_client": "9",
+        "nr_bucati": 1,
+        "data_ora": "22.02.2024 12:00"
+    },
+    "t14": {
+        "id_entitate": "t14",
+        "id_medicament": "m11",
+        "id_card_client": "10",
+        "nr_bucati": 2,
+        "data_ora": "10.03.2024 13:45"
+    }
+}

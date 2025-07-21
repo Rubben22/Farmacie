@@ -5,8 +5,10 @@ from pathlib import Path
 from tabulate import tabulate
 from pydantic import BaseModel
 
+
 class Entitate(BaseModel):
     id_entitate: str
+
 
 class Medicament(Entitate):
     nume: str
@@ -22,6 +24,7 @@ class Medicament(Entitate):
             "pret": self.pret,
             "reteta": self.reteta
         }
+
 
 # ========= File Path ==========
 MEDICAMENT_FILE = Path.home() / "PycharmProjects/Farmacie/medicament.json"

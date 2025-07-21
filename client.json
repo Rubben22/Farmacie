@@ -1,0 +1,72 @@
+{
+  "1": {
+    "id_entitate": "1",
+    "nume": "Pasca",
+    "prenume": "Ruben",
+    "CNP": 314046,
+    "data_nasterii": "03.10.2002"
+  },
+  "2": {
+    "id_entitate": "2",
+    "nume": "Paraschiv",
+    "prenume": "Mihai-George",
+    "CNP": 329832,
+    "data_nasterii": "21.05.1998"
+  },
+  "3": {
+    "id_entitate": "3",
+    "nume": "Cena",
+    "prenume": "Johny",
+    "CNP": 453627,
+    "data_nasterii": "05.03.2003"
+  },
+  "4": {
+    "id_entitate": "4",
+    "nume": "Popescu",
+    "prenume": "Andreea",
+    "CNP": 998712,
+    "data_nasterii": "12.12.1995"
+  },
+  "5": {
+    "id_entitate": "5",
+    "nume": "Ionescu",
+    "prenume": "Victor",
+    "CNP": 558877,
+    "data_nasterii": "28.03.1988"
+  },
+  "6": {
+    "id_entitate": "6",
+    "nume": "Marin",
+    "prenume": "Teodora",
+    "CNP": 700111,
+    "data_nasterii": "01.06.2000"
+  },
+  "7": {
+    "id_entitate": "7",
+    "nume": "Stan",
+    "prenume": "Cristi",
+    "CNP": 101112,
+    "data_nasterii": "09.08.1999"
+  },
+  "8": {
+    "id_entitate": "8",
+    "nume": "Radu",
+    "prenume": "Alexandra",
+    "CNP": 334455,
+    "data_nasterii": "11.04.1996"
+  },
+  "9": {
+    "id_entitate": "9",
+    "nume": "Georgescu",
+    "prenume": "Matei",
+    "CNP": 777888,
+    "data_nasterii": "30.01.1990"
+  },
+  "10": {
+    "id_entitate": "10",
+    "nume": "Simion",
+    "prenume": "Lavinia",
+    "CNP": 888999,
+    "data_nasterii": "17.07.1993"
+  }
+}
