@@ -5,11 +5,10 @@ from Repository.repository import Repository
 
 
 class MedicamentService:
-    def __init__(self,
-                 medicament_repository: Repository):
+    def __init__(self, medicament_repository: Repository):
         self.__medicamentRepository = medicament_repository
 
-    def getAll(self) -> List[ Medicament ]:
+    def getAll(self) -> List[Medicament]:
         """
         :return: toate medicamentele care sunt salvate in repository
         """
@@ -26,11 +25,13 @@ class MedicamentService:
         :return: Un nou medicament care va fi adaugat in repository
         """
 
-        medicament = Medicament(id_entitate=id_medicament,
-                                nume=nume,
-                                producator=producator,
-                                pret=pret,
-                                reteta=reteta)
+        medicament = Medicament(
+            id_entitate=id_medicament,
+            nume=nume,
+            producator=producator,
+            pret=pret,
+            reteta=reteta,
+        )
         self.__medicamentRepository.adauga(medicament)
 
     def sterge(self, id_medicament):
@@ -51,9 +52,11 @@ class MedicamentService:
         :param reteta: str
         :return: Medicamentul modificat care il va adauga in repository
         """
-        medicament = Medicament(id_entitate=id_medicament,
-                                nume=nume,
-                                producator=producator,
-                                pret=pret,
-                                reteta=reteta)
+        medicament = Medicament(
+            id_entitate=id_medicament,
+            nume=nume,
+            producator=producator,
+            pret=pret,
+            reteta=reteta,
+        )
         self.__medicamentRepository.modifica(medicament)

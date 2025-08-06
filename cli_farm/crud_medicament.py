@@ -16,7 +16,7 @@ class Medicament(Entitate):
     pret: float
     reteta: str
 
-    @field_validator('pret')
+    @field_validator("pret")
     @classmethod
     def validate_pret(cls, pret):
         if pret < 0:
@@ -29,7 +29,7 @@ class Medicament(Entitate):
             "nume": self.nume,
             "producator": self.producator,
             "pret": self.pret,
-            "reteta": self.reteta
+            "reteta": self.reteta,
         }
 
 
@@ -45,7 +45,7 @@ def read_data():
 
 
 def write_data(data):
-    with open(MEDICAMENT_FILE, 'w') as f:
+    with open(MEDICAMENT_FILE, "w") as f:
         json.dump(data, f, indent=4)
 
 
@@ -55,14 +55,14 @@ def write_data(data):
 def cli(ctx):
     """Medicament CLI group for CRUD operations"""
     ctx.ensure_object(dict)
-    ctx.obj[ 'data' ] = read_data()
+    ctx.obj[ "data" ] = read_data()
 
 
 @cli.command()
 @click.pass_context
 def show(ctx):
     """Afișează toate medicamentele din repository"""
-    data = ctx.obj[ 'data' ]
+    data = ctx.obj[ "data" ]
     if not data:
         click.echo("Nu există medicamente salvate.")
         return
@@ -71,31 +71,49 @@ def show(ctx):
     for raw in data.values():
         raw.pop("py/object", None)
         med = Medicament(**raw)
-        medicamente.append([
-            med.id_entitate,
-            med.nume,
-            med.producator,
-            f"{med.pret:.2f}",
-            med.reteta
-        ])
+        medicamente.append(
+            [
+                med.id_entitate,
+                med.nume,
+                med.producator,
+                f"{med.pret:.2f}",
+                med.reteta,
+            ]
+        )
 
     headers = [ "ID", "Nume", "Producător", "Preț", "Rețetă" ]
-    click.echo(tabulate(medicamente, headers=headers, tablefmt="simple_outline"))
+    click.echo(
+        tabulate(medicamente, headers=headers, tablefmt="simple_outline")
+    )
 
 
 @cli.command()
-@click.option('--id', prompt="ID", help="ID")
-@click.option('--nume', prompt="Nume", help="Numele medicamentului")
-@click.option('--producator', prompt="Producător", help="Numele producătorului")
-@click.option('--pret', prompt="Preț", type=float, help="Prețul medicamentului")
-@click.option('--reteta', prompt="Necesită rețetă", type=click.Choice([ 'da', 'nu' ]), help="Necesită rețetă")
+@click.option("--id", prompt="ID", help="ID")
+@click.option("--nume", prompt="Nume",
+              help="Numele medicamentului")
+@click.option(
+    "--producator", prompt="Producător",
+    help="Numele producătorului"
+)
+@click.option(
+    "--pret", prompt="Preț", type=float,
+    help="Prețul medicamentului"
+)
+@click.option(
+    "--reteta",
+    prompt="Necesită rețetă",
+    type=click.Choice([ "da", "nu" ]),
+    help="Necesită rețetă",
+)
 @click.pass_context
 def add(ctx, id, nume, producator, pret, reteta):
     """Adaugă un nou medicament în repository"""
-    data = ctx.obj[ 'data' ]
+    data = ctx.obj[ "data" ]
 
     if id in data:
-        raise click.BadOptionUsage("id", f"Există deja un medicament cu ID-ul {id}")
+        raise click.BadOptionUsage(
+            "id", f"Există deja un medicament cu ID-ul {id}"
+        )
     if pret < 0:
         raise click.BadParameter("Prețul nu poate fi negativ.")
 
@@ -104,7 +122,7 @@ def add(ctx, id, nume, producator, pret, reteta):
         nume=nume,
         producator=producator,
         pret=pret,
-        reteta=reteta
+        reteta=reteta,
     )
 
     data[ id ] = med.to_dict()
@@ -114,11 +132,11 @@ def add(ctx, id, nume, producator, pret, reteta):
 
 
 @cli.command()
-@click.argument('id')
+@click.argument("id")
 @click.pass_context
 def delete(ctx, id):
     """Șterge medicamentul cu ID-ul dat"""
-    data = ctx.obj[ 'data' ]
+    data = ctx.obj[ "data" ]
 
     if id not in data:
         raise click.BadParameter(f"Medicamentul cu ID-ul {id} nu există.")
@@ -130,15 +148,18 @@ def delete(ctx, id):
 
 
 @cli.command()
-@click.argument('id')
-@click.option('--nume', help="Noul nume al medicamentului")
-@click.option('--producator', help="Noul producător")
-@click.option('--pret', type=float, help="Noul preț")
-@click.option('--reteta', type=click.Choice([ 'da', 'nu' ]), help="Necesită rețetă (da/nu)")
+@click.argument("id")
+@click.option("--nume", help="Noul nume al medicamentului")
+@click.option("--producator", help="Noul producător")
+@click.option("--pret", type=float, help="Noul preț")
+@click.option(
+    "--reteta", type=click.Choice([ "da", "nu" ]),
+    help="Necesită rețetă (da/nu)"
+)
 @click.pass_context
 def update(ctx, id, nume, producator, pret, reteta):
     """Actualizează un medicament existent după ID"""
-    data = ctx.obj[ 'data' ]
+    data = ctx.obj[ "data" ]
 
     if id not in data:
         raise click.BadParameter(f"Medicamentul cu ID-ul {id} nu există.")
@@ -149,7 +170,7 @@ def update(ctx, id, nume, producator, pret, reteta):
         "nume": nume,
         "producator": producator,
         "pret": pret,
-        "reteta": reteta if reteta else None
+        "reteta": reteta if reteta else None,
     }
 
     for key, value in updates.items():

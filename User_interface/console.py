@@ -1,11 +1,8 @@
-
-
 from Service.medicament_service import MedicamentService
 
 
 class Consola:
-    def __init__(self,
-                 medicamentService: MedicamentService):
+    def __init__(self, medicamentService: MedicamentService):
         self.__medicamentService = medicamentService
 
     def run_principal_menu(self):
@@ -40,8 +37,9 @@ class Consola:
             producator = input("Dati numele producatorului: ")
             pret = float(input("Dati pretul: "))
             reteta = input("Necesita reteta (da/nu): ")
-            self.__medicamentService.adauga(id_medicament, nume, producator,
-                                            pret, reteta)
+            self.__medicamentService.adauga(
+                id_medicament, nume, producator, pret, reteta
+            )
         except ValueError as v:
             print(v)
         except Exception as e:
@@ -61,7 +59,8 @@ class Consola:
             producator = input("Dati noul producator: ")
             pret = float(input("Dati noul pret: "))
             reteta = input("Necesita reteta: ")
-            self.__medicamentService.modifica(id_medicament, nume, producator,
-                                              pret, reteta)
+            self.__medicamentService.modifica(
+                id_medicament, nume, producator, pret, reteta
+            )
         except Exception as e:
             print(e)

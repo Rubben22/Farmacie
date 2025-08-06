@@ -12,6 +12,7 @@ class Tranzactie(Entitate):
     - nr_bucati: numarul de bucati
     - data_ora: data si ora la care s-a facut tranzactia
     """
+
     id_medicament: str
     id_card_client: str
     nr_bucati: int

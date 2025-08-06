@@ -15,6 +15,7 @@ class Client(Entitate):
     - data_nasterii: data nasterii
     - data_inregistrarii: data la care s-a facut inregistrarea
     """
+
     nume: str
     prenume: str
     CNP: int

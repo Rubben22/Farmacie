@@ -9,7 +9,7 @@ class Medicament(Entitate):
     pret: float
     reteta: str
 
-    @field_validator('pret')
+    @field_validator("pret")
     @classmethod
     def validate_pret(cls, pret):
         if pret < 0:
@@ -22,5 +22,5 @@ class Medicament(Entitate):
             "nume": self.nume,
             "producator": self.producator,
             "pret": self.pret,
-            "reteta": self.reteta
+            "reteta": self.reteta,
         }
